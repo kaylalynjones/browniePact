@@ -1,0 +1,29 @@
+h3 Profile
+.row
+  .row
+    .col-xs-4
+      form(novalidate, name='profileForm', role='form')
+        .form-group
+          label(for='username') Username
+          input.form-control#username(name='username', type='text', ng-model='user.username', ng-minlength='3', required)
+        .form-group
+          label(for='gender') Gender
+          select.form-control#gender(name='gender', ng-model='user.gender', required)
+            option(value='male') Male
+            option(value='female') Female
+        .form-group
+          label(for='weight') Weight(lb)
+          input.form-control#due(name='weight', type='number', ng-model='user.weight', required)
+    .col-xs-8
+  .row
+    .col-xs-2
+      .form-group
+        label(for='ft') hieght(ft)
+        input.form-control#ft(name='ft', type='number', ng-model='user.height.ft', required)
+    .col-xs-2
+      .form-group
+        label(for='in') (in)
+        input.form-control#in(name='in', type='number', ng-model='user.height.in', required)
+      .form-group
+        button.btn.btn-success(ng-show='profileForm.$valid', ng-click='addProfile()') Update Profile
+  .col-xs-8
