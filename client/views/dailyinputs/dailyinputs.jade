@@ -13,13 +13,21 @@ h2.text-center Daily Calculations
         label.label-control(for='meal') Meal
           select.form-control(name='meal', ng-model='food.meal', required)
             option.form-control(value='breakfast') Breakfast
-            option.form-control(value='breakfast') Snack
-            option.form-control(value='breakfast') Lunch
-            option.form-control(value='breakfast') Dinner
+            option.form-control(value='snack') Snack
+            option.form-control(value='lunch') Lunch
+            option.form-control(value='dinner') Dinner
       button.btn.btn-primary.pull-right(ng-show='foodForm.$valid', ng-click='addFood()') Add Meal
   .col-xs-6
+    h3 Today's Date here.
+    h4 You Consumed:
+    h5 Foodname
+    h5 Calories
+    h5 Meal
+
+.row
+  .col-xs-6
     form.form#exercise-form(name='exerciseForm', role='form', novalidate)
-      h4.text-center Did You exercise today?
+      h4.text-center Did you exercise today?
       .form-group
         label.label-control(for='type') Type
           select.form-control(name='type', ng-model='exercise.type', required)
@@ -29,3 +37,14 @@ h2.text-center Daily Calculations
           select.form-control(name='duration', ng-model='exercise.duration', required)
             option.form-control(value='') Select Duration
       button.btn.btn-primary.pull-right(ng-show='exerciseForm.$valid', ng-click='addExercise()') Add Exercise
+  .col-xs-6
+    h4 Your Activity:
+    h5 Type
+    h5 Duration
+.row
+  .col-xs-3
+  .col-xs-6
+    h2 You Totally Deserve a: Raisin!
+  .col-xs-3
+
+
