@@ -32,3 +32,11 @@ exports.logout = function(req, res){
     res.status(200).end();
   });
 };
+
+exports.create = function(req, res){
+  res.send();
+};
+
+exports.update = function(req, res){
+  res.send();
+};
