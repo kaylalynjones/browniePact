@@ -9,7 +9,9 @@ exports.create = function(req, res){
 };
 
 exports.index = function(req, res){
-  Exercise.allByUserId(req.user._id, function(err, exercises){
-    res.send({exercises:exercises});
+  Exercise.findActivities(function(err, activities){
+    Exercise.allByUserId(req.user._id, function(err, exercises){
+      res.send({exercises:exercises, activities:activities});
+    });
   });
 };

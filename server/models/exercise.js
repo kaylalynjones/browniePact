@@ -1,7 +1,6 @@
 'use strict';
 
 var Mongo = require('mongodb');
-    //Tag = require('../models/tags.js');
 
 function Exercise(o, user){
   this.name = o.name;
@@ -18,6 +17,10 @@ Object.defineProperty(Exercise, 'collection', {
 Exercise.create = function(o, user, cb){
   var e = new Exercise(o, user);
   Exercise.collection.save(e, cb);
+};
+
+Exercise.findActivities = function(cb){
+  global.mongodb.collection('activities').find().toArray(cb);
 };
 
 Exercise.allByUserId = function(userId, cb){
