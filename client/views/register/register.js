@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('yum.my')
+  angular.module('browniePact')
   .controller('RegisterCtrl', ['$scope', '$location',  'User', function($scope, $location, User){
     $scope.user = {};
     $scope.register = function(){

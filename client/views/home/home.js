@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('yum.my')
+  angular.module('browniePact')
   .controller('HomeCtrl', ['$scope', '$interval', 'Home', function($scope, $interval, Home){
     Home.getMessage().then(function(response){
       $scope.mean = response.data.mean;
