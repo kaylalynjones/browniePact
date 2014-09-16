@@ -1,18 +1,20 @@
 (function(){
   'use strict';
 
-  angular.module('yum.my', ['ngRoute', 'LocalForageModule'])
+  angular.module('browniePact', ['ngRoute', 'LocalForageModule'])
   .config(['$routeProvider', '$httpProvider', '$localForageProvider', function($routeProvider, $httpProvider, $localForageProvider){
     $routeProvider
     .when('/', {templateUrl:'/views/home/home.html', controller:'HomeCtrl'})
     .when('/register', {templateUrl:'/views/register/register.html', controller:'RegisterCtrl'})
     .when('/login', {templateUrl:'/views/login/login.html', controller:'LoginCtrl'})
     .when('/logout', {templateUrl:'/views/logout/logout.html', controller:'LogoutCtrl'})
-    .when('/bookmarks/:categoryId?', {templateUrl:'/views/bookmarks/bookmarks.html', controller:'BookmarksCtrl'})
+    .when('/profile', {templateUrl:'/views/profiles/profiles.html', controller:'ProfilesCtrl'})
+    .when('/dailyinput', {templateUrl:'/views/dailyinputs/dailyinputs.html', controller:'DailyInputsCtrl'})
+    .when('/dashboard', {templateUrl:'/views/dashboards/dashboards.html', controller:'DashboardsCtrl'})
     .otherwise({redirectTo:'/'});
 
     $httpProvider.interceptors.push('HttpInterceptor');
-    $localForageProvider.config({name:'yummy', storeName:'cache', version:1.0});
+    $localForageProvider.config({name:'browniePact', storeName:'cache', version:1.0});
   }]);
 })();
 
