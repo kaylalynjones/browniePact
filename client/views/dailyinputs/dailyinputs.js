@@ -7,6 +7,7 @@
     $scope.food = {};
     $scope.exercises = [];
     $scope.exercise ={};
+    $scope.activities = [];
 
     $scope.addFood = function(){
       Food.create($scope.food).then(function(response){
@@ -28,6 +29,7 @@
 
     Exercise.all().then(function(response){
       $scope.exercises = response.data.exercises;
+      $scope.activities = response.data.activities;
     });
 
   }]);
