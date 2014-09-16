@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('yum.my')
+  angular.module('browniePact')
   .controller('BookmarksCtrl', ['$scope', '$routeParams', 'Category', 'Bookmark', function($scope, $routeParams, Category, Bookmark){
     $scope.categories = [];
     $scope.bookmark = {};

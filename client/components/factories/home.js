@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('yum.my')
+  angular.module('browniePact')
   .factory('Home', ['$http', function($http){
 
     function getMessage(){
