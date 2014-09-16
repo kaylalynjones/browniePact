@@ -1,6 +1,7 @@
 'use strict';
 
 var Mongo = require('mongodb');
+    //Tag = require('../models/tags.js');
 
 function Exercise(o, user){
   this.name = o.name;

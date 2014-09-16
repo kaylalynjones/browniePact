@@ -4,8 +4,8 @@
   angular.module('browniePact')
   .controller('DailyInputsCtrl', ['$scope', 'Food', 'Exercise', function($scope, Food, Exercise){
     $scope.foods = [];
-    $scope.exercises = [];
     $scope.food = {};
+    $scope.exercises = [];
     $scope.exercise ={};
 
     $scope.addFood = function(){
