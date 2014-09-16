@@ -1,0 +1,15 @@
+{"_id": {"$oid":"a00000000000000000000001"}, "name":"swimming", "halfhrCalories":200},
+{"_id": {"$oid":"a00000000000000000000002"}, "name":"running", "halfhrCalories":300},
+{"_id": {"$oid":"a00000000000000000000003"}, "name":"biking", "halfhrCalories":300},
+{"_id": {"$oid":"a00000000000000000000004"}, "name":"walking", "halfhrCalories":150},
+{"_id": {"$oid":"a00000000000000000000005"}, "name":"sex", "halfhrCalories":150},
+{"_id": {"$oid":"a00000000000000000000006"}, "name":"housework", "halfhrCalories":100},
+{"_id": {"$oid":"a00000000000000000000007"}, "name":"tennis", "halfhrCalories":150},
+{"_id": {"$oid":"a00000000000000000000008"}, "name":"pilates", "halfhrCalories":125},
+{"_id": {"$oid":"a00000000000000000000009"}, "name":"vollyball", "halfhrCalories":100},
+{"_id": {"$oid":"a00000000000000000000010"}, "name":"yoga", "halfhrCalories":250},
+{"_id": {"$oid":"a00000000000000000000011"}, "name":"dancing", "halfhrCalories":250},
+{"_id": {"$oid":"a00000000000000000000012"}, "name":"football", "halfhrCalories":350},
+{"_id": {"$oid":"a00000000000000000000013"}, "name":"rockclimbing", "halfhrCalories":350},
+{"_id": {"$oid":"a00000000000000000000014"}, "name":"basketball", "halfhrCalories":350}
+{"_id": {"$oid":"a00000000000000000000015"},"name":"hiking", "halfhrCalories":200}
