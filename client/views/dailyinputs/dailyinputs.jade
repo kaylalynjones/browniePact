@@ -30,11 +30,11 @@ h2.text-center Daily Calculations
       h4.text-center Did you exercise today?
       .form-group
         label.label-control(for='type') Type
-          select.form-control(name='type', ng-model='exercise.type', required)
+          select.form-control(name='type', ng-model='exercise.type', ng-options='c._id as c.name for c in categories', required)
             option.form-control(value='') Select Type
       .form-group
         label.label-control(for='duration') Duration
-          select.form-control(name='duration', ng-model='exercise.duration', required)
+          select.form-control(name='duration', ng-model='exercise.duration', ng-options='d._id as c.name for c in categories', required)
             option.form-control(value='') Select Duration
       button.btn.btn-primary.pull-right(ng-show='exerciseForm.$valid', ng-click='addExercise()') Add Exercise
   .col-xs-6
@@ -45,6 +45,6 @@ h2.text-center Daily Calculations
   .col-xs-3
   .col-xs-6
     h2 You Totally Deserve a: Raisin!
-  .col-xs-3
+  .col-xs-4
 
 

@@ -4,11 +4,11 @@
   angular.module('browniePact')
   .controller('HomeCtrl', ['$scope', '$interval', 'Home', function($scope, $interval, Home){
     Home.getMessage().then(function(response){
-      $scope.mean = response.data.mean;
+      $scope.brownie = response.data.brownie;
 
       $interval(function(){
-        $scope.mean = _.shuffle($scope.mean);
-      }, 500);
+        $scope.brownie = _.shuffle($scope.brownie);
+      }, 1000);
     });
   }]);
 })();
