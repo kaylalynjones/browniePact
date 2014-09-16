@@ -47,9 +47,13 @@ h2.text-center Daily Calculations
             option.form-control 120
       button.btn.btn-primary.pull-right(ng-show='exerciseForm.$valid', ng-click='addExercise()') Add Exercise
   .col-xs-6
-    h4 Your Activity:
-    h5 Type
-    h5 Duration
+    div(ng-repeat='exercise in exercises')
+      h3 Your Activity:
+      h5 {{ exercise.name }}
+      h5 {{ exercise.date | date}}
+      h5 {{ exercise.duration }} Minutes Duration
+      h5 {{ exercise.calories }} Calories
+
 .row
   .col-xs-3
   .col-xs-6
