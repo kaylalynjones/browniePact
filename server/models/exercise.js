@@ -1,10 +1,14 @@
 'use strict';
 
-var Mongo = require('mongodb');
+var Mongo = require('mongodb'),
+    Tag = require('../models/tags.js');
 
 function Exercise(o, user){
   this.name = o.name;
   this.userId = user._id;
+  this.duration = o.duration;
+  this.date = new Date(o.date);
+  this.type = o.type;
 }
 
 Object.defineProperty(Exercise, 'collection', {
