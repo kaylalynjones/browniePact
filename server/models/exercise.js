@@ -2,12 +2,13 @@
 
 var Mongo = require('mongodb');
 
-function Exercise(o, user){
-  this.name = o.name;
+function Exercise(o, user, type){
+  this.typeId = type._id;
+  this.name = type.name;
+  this.calories = type.halfhrCalories;
   this.userId = user._id;
   this.duration = o.duration;
   this.date = new Date(o.date);
-  this.type = o.type;
 }
 
 Object.defineProperty(Exercise, 'collection', {
@@ -15,8 +16,11 @@ Object.defineProperty(Exercise, 'collection', {
 });
 
 Exercise.create = function(o, user, cb){
-  var e = new Exercise(o, user);
-  Exercise.collection.save(e, cb);
+  var id = Mongo.ObjectID(o.type);
+  global.mongodb.collection('activities').findOne({_id:id}, function(err, type){
+    var e = new Exercise(o, user, type);
+    Exercise.collection.save(e, cb);
+  });
 };
 
 Exercise.findActivities = function(cb){

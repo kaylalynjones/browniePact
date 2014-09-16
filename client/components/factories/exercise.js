@@ -5,10 +5,10 @@
   .factory('Exercise', ['$http', function($http){
 
     function create(exercise){
-      return $http.post('/exercises', exercise);
+      return $http.post('/exercise', exercise);
     }
     function all(){
-      return $http.get('/exercises');
+      return $http.get('/exercise');
     }
 
     return {create:create, all:all};
