@@ -10,6 +10,9 @@ h2.text-center Daily Calculations
         label(for='link') Calories
         input.form-control#calories(type='number', name='calories', ng-model='food.calories', required)
       .form-group
+        label(for='foodDate') Date
+        input.form-control#foodDate(type='date', name='foodDate', ng-model='food.date', required)
+      .form-group
         label.label-control(for='meal') Meal
           select.form-control(name='meal', ng-model='food.meal', required)
             option.form-control(value='breakfast') Breakfast
@@ -27,15 +30,21 @@ h2.text-center Daily Calculations
 .row
   .col-xs-6
     form.form#exercise-form(name='exerciseForm', role='form', novalidate)
-      h4.text-center Did you exercise today?
+      h4.text-center Did you exercise?
+      .form-group
+        label(for='exerDate') Date
+        input.form-control#exerDate(type='date', name='exerDate', ng-model='exercise.date', required)
       .form-group
         label.label-control(for='type') Type
-          select.form-control(name='type', ng-model='exercise.type', ng-options='c._id as c.name for c in categories', required)
+          select.form-control(name='type', ng-model='exercise.type', ng-options='a._id as a.name for a in activities', required)
             option.form-control(value='') Select Type
       .form-group
         label.label-control(for='duration') Duration
-          select.form-control(name='duration', ng-model='exercise.duration', ng-options='d._id as c.name for c in categories', required)
-            option.form-control(value='') Select Duration
+          select.form-control(name='duration', ng-model='exercise.duration' required)
+            option.form-control 30
+            option.form-control 60
+            option.form-control 90
+            option.form-control 120
       button.btn.btn-primary.pull-right(ng-show='exerciseForm.$valid', ng-click='addExercise()') Add Exercise
   .col-xs-6
     h4 Your Activity:
