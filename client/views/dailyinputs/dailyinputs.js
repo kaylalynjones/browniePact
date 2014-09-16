@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('browniePact')
-  .controller('DailyInputsCtrl', ['$scope', function($scope){
+  .controller('DailyInputsCtrl', ['$scope', 'Food', 'Exercise', function($scope, Food, Exercise){
     $scope.foods = [];
     $scope.exercises = [];
     $scope.food = {};
