@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('yum.my')
+  angular.module('browniePact')
   .controller('NavCtrl', ['$scope', '$localForage', function($scope, $localForage){
     $localForage.getItem('email').then(function(email){
       $scope.email = email;
