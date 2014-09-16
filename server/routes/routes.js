@@ -9,8 +9,8 @@ var morgan         = require('morgan'),
     security       = require('../lib/security'),
     home           = require('../controllers/home'),
     users          = require('../controllers/users'),
-    bookmarks      = require('../controllers/bookmarks'),
-    categories     = require('../controllers/categories');
+    foods          = require('../controllers/foods'),
+    exercises      = require('../controllers/exercises');
 
 module.exports = function(app, express){
   app.use(morgan('dev'));
