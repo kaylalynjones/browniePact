@@ -2,12 +2,15 @@
   'use strict';
 
   angular.module('browniePact')
-  .factory('Bookmark', ['$http', function($http){
+  .factory('Food', ['$http', function($http){
 
-    function create(bookmark){
-      return $http.post('/bookmarks/add', bookmark);
+    function create(food){
+      return $http.post('/foods', food);
+    }
+    function all(){
+      return $http.get('/foods');
     }
 
-    return {create:create};
+    return {create:create, all:all};
   }]);
 })();
