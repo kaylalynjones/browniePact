@@ -9,6 +9,7 @@
         .form-group
           label(for='email') Email
           input.form-control#email(type='email', name='email', ng-model='user.email', required, autofocus)
+          input.form-control#calorieBase(name='calorieBase', type='hidden', value=0, ng-init='user.calorieBase=1')
         .form-group
           label(for='due') Password
           input.form-control#password(type='password', name='password', minlength='3', ng-model='user.password', required)
@@ -26,6 +27,7 @@
         .form-group
           label(for='weight') Weight(lb)
           input.form-control#due(name='weight', type='number', ng-model='user.weight', required)
+          input.form-control#due(name='weightKG', type='hidden', value=0, ng-init='user.weightKG=1')
       .row
         .col-xs-3
           .form-group
@@ -34,7 +36,8 @@
         .col-xs-3
           .form-group
             label(for='in') (in)
-            input.form-control#in(name='in', type='number', ng-model='user.in', required)
+            input.form-control#in(name='inches', type='number', ng-model='user.inches', required)
+            input.form-control#heightcm(name='heightCM', type='hidden', value=0, ng-init='user.heightCM=1')
           .form-group
       button.btn.btn-success.pull-right(ng-show='userForm.$valid', ng-click='register()') Register
   .col-xs-4

@@ -19,6 +19,13 @@ User.register = function(o, cb){
   User.collection.findOne({email:o.email}, function(err, user){
     if(user || o.password < 3){return cb();}
     o.password = bcrypt.hashSync(o.password, 10);
+    o.weightKG = (parseInt(o.weight)*0.453592);
+    o.heightCM = (parseInt(o.ft)*12+parseInt(o.inches))*2.54;
+    if(o.gender !== 'male'){
+      o.calorieBase=(10*o.weightKG)+(6.25*o.heightCM)-(5*o.age)-161;
+    }else if(o.gender === 'male'){
+      o.calorieBase=(10*o.weightKG)+(6.25*o.heightCM)-(5*o.age)+5;
+    }
     User.collection.save(o, cb);
   });
 };
