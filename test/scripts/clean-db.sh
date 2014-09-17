@@ -6,3 +6,6 @@ if [ -z "$1" ] ; then
     fi
 
     mongoimport --jsonArray --drop --db $1 --collection activities --file ../../db/activities.json
+    mongoimport --jsonArray --drop --db $1 --collection users --file ../../db/users.json
+    mongoimport --jsonArray --drop --db $1 --collection foods --file ../../db/food.json
+    mongoimport --jsonArray --drop --db $1 --collection exercises --file ../../db/exercise.json

@@ -1,0 +1,54 @@
+{
+    "_id" : {"$oid":"541909bac0af0d591724d2ce"},
+    "typeId" : {"oid":"a00000000000000000000002"},
+    "name" : "running",
+    "calories" : 300,
+    "userId" : {"$oid":"5418f384135d171d16434822"},
+    "date": {"$date":1410670800000},
+    "duration" : "30"
+}
+{
+    "_id" : {"$oid":"541909d0c0af0d591724d2cf"},
+    "typeId" : {"$oid":"a00000000000000000000003"},
+    "name" : "biking",
+    "calories" : 600,
+    "userId" : {"$oid":"5418f384135d171d16434822"},
+    "date": {"$date":1410757200000},
+    "duration" : "60"
+}
+{
+    "_id" : {"$oid":"541909e5c0af0d591724d2d0"},
+    "typeId" : {"$oid":"a00000000000000000000006"},
+    "name" : "housework",
+    "calories" : 200,
+    "userId" : {"oid":"5418f384135d171d16434822"},
+    "date": {"$date":1410670800000},
+    "duration" : "60"
+}
+{
+    "_id" : {"$oid":"54190bf9c0af0d591724d2d3"},
+    "typeId" : {"$oid":"a00000000000000000000007"},
+    "name" : "tennis",
+    "calories" : 150,
+    "userId" : {"$oid":"5418f499135d171d16434826"},
+    "date": {"$date":1410670800000},
+    "duration" : "30"
+}
+{
+    "_id" : {"$oid":"54190c08c0af0d591724d2d4"},
+    "typeId" : {"$oid":"a00000000000000000000010"},
+    "name" : "yoga",
+    "calories" : 500,
+    "userId" : {"$oid":"5418f499135d171d16434826"},
+    "date": {"$date":1410757200000},
+    "duration" : "60"
+}
+{
+    "_id" : {"$oid":"54190c1ec0af0d591724d2d5"},
+    "typeId" : {"$oid":"a00000000000000000000001"},
+    "name" : "swimming",
+    "calories" : 200,
+    "userId" : {"$oid":"5418f499135d171d16434826"},
+    "date": {"$date":1410670800000},
+    "duration" : "30"
+}

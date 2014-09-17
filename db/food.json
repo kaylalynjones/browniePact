@@ -1,0 +1,160 @@
+{
+    "_id" : {"$oid":"5418f639135d171d1643482c"},
+    "name" : "Mac and cheese",
+    "calories" : 1030,
+    "meal" : "lunch",
+    "date": {"$date":1410670800000},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f65c135d171d1643482d"},
+    "name" : "grilled checken wrap",
+    "calories" : 350,
+    "meal" : "snack",
+    "date": {"$date":1410670800000},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f672135d171d1643482e"},
+    "name" : "cereal",
+    "calories" : 200,
+    "meal" : "breakfast",
+    "date": {"$date":1410670800000},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f6fd135d171d1643482f"},
+    "name" : "Dumplings",
+    "calories" : 350,
+    "meal" : "dinner",
+    "date": {"$date":1410670800000},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f71d135d171d16434830"},
+    "name" : "burger",
+    "calories" : 350,
+    "meal" : "lunch",
+    "date": {"$date":1410757200000},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f735135d171d16434831"},
+    "name" : "soda",
+    "calories" : 210,
+    "meal" : "breakfast",
+    "date": {"$date":1410757200000},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f795135d171d16434832"},
+    "name" : "pizza",
+    "calories" : 540,
+    "meal" : "dinner",
+    "date": {"$date":1410757200000},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f81d135d171d16434833"},
+    "name" : "southwest salad",
+    "calories" : 350,
+    "meal" : "lunch",
+    "date": {"$date":1410924155883},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f8af135d171d16434834"},
+    "name" : "ice cream",
+    "calories" : 350,
+    "meal" : "snack",
+    "date": {"$date":1410924155883},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"5418f9ffffcbf069169ce29b"},
+    "name" : "Fudge",
+    "calories" : 500,
+    "meal" : "snack",
+    "date": {"$date":1410924155883},
+    "userId" : {"$oid":"5418f384135d171d16434822"}
+}
+{
+    "_id" : {"$oid":"a418f639135d171d1643482c"},
+    "name" : "Salad",
+    "calories" : 300,
+    "meal" : "lunch",
+    "date": {"$date":1410670800000},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f65c135d171d1643482d"},
+    "name" : "grilled chicken sandwich",
+    "calories" : 350,
+    "meal" : "snack",
+    "date": {"$date":1410670800000},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f672135d171d1643482e"},
+    "name" : "cereal",
+    "calories" : 200,
+    "meal" : "breakfast",
+    "date": {"$date":1410670800000},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f6fd135d171d1643482f"},
+    "name" : "Thai Curry",
+    "calories" : 350,
+    "meal" : "dinner",
+    "date": {"$date":1410670800000},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f71d135d171d16434830"},
+    "name" : "Turkey Sandwich",
+    "calories" : 250,
+    "meal" : "lunch",
+    "date": {"$date":1410757200000},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f735135d171d16434831"},
+    "name" : "smoothie",
+    "calories" : 210,
+    "meal" : "breakfast",
+    "date": {"$date":1410757200000},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f795135d171d16434832"},
+    "name" : "Salad",
+    "calories" : 400,
+    "meal" : "dinner",
+    "date": {"$date":1410757200000},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f81d135d171d16434833"},
+    "name" : "southwest salad",
+    "calories" : 350,
+    "meal" : "lunch",
+    "date": {"$date":1410924155883},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f8af135d171d16434834"},
+    "name" : "Cookie",
+    "calories" : 100,
+    "meal" : "snack",
+    "date": {"$date":1410924155883},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
+{
+    "_id" : {"$oid":"a418f9ffffcbf069169ce29b"},
+    "name" : "Fruit",
+    "calories" : 200,
+    "meal" : "snack",
+    "date": {"$date":1410924155883},
+    "userId" : {"$oid":"5418f499135d171d16434826"}
+}
