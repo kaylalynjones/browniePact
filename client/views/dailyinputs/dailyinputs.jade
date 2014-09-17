@@ -13,19 +13,20 @@ h2.text-center Daily Calculations
         label(for='foodDate') Date
         input.form-control#foodDate(type='date', name='foodDate', ng-model='food.date', required)
       .form-group
-        label.label-control(for='meal') Meal
-          select.form-control(name='meal', ng-model='food.meal', required)
-            option.form-control(value='breakfast') Breakfast
-            option.form-control(value='snack') Snack
-            option.form-control(value='lunch') Lunch
-            option.form-control(value='dinner') Dinner
+        label(for='meal') Meal
+        select.form-control(name='meal', ng-model='food.meal', required)
+          option.form-control(value='breakfast') Breakfast
+          option.form-control(value='snack') Snack
+          option.form-control(value='lunch') Lunch
+          option.form-control(value='dinner') Dinner
       button.btn.btn-primary.pull-right(ng-show='foodForm.$valid', ng-click='addFood()') Add Meal
   .col-xs-6
-    h3 Today's Date here.
+    h3 {{date | date}}
     h4 You Consumed:
-    h5 Foodname
-    h5 Calories
-    h5 Meal
+    div(ng-repeat='food in foods')
+      h5 {{food.name}}
+      h5 {{food.calories}}
+      h5 {{food.meal}}
 
 .row
   .col-xs-6
@@ -36,15 +37,15 @@ h2.text-center Daily Calculations
         input.form-control#exerDate(type='date', name='exerDate', ng-model='exercise.date', required)
       .form-group
         label.label-control(for='typeId') Type
-          select.form-control(name='typeId', ng-model='exercise.type', ng-options='a._id as a.name for a in activities', required)
-            option.form-control(value='') Select Type
+        select.form-control(name='typeId', ng-model='exercise.type', ng-options='a._id as a.name for a in activities', required)
+          option.form-control(value='') Select Type
       .form-group
-        label.label-control(for='duration') Duration
-          select.form-control(name='duration', ng-model='exercise.duration' required)
-            option.form-control 30
-            option.form-control 60
-            option.form-control 90
-            option.form-control 120
+        label(for='duration') Duration
+        select.form-control(name='duration', ng-model='exercise.duration' required)
+          option.form-control 30
+          option.form-control 60
+          option.form-control 90
+          option.form-control 120
       button.btn.btn-primary.pull-right(ng-show='exerciseForm.$valid', ng-click='addExercise()') Add Exercise
   .col-xs-6
     h3 Your Activity:

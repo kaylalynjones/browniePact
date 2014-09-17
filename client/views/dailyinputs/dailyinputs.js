@@ -8,6 +8,7 @@
     $scope.exercises = [];
     $scope.exercise ={};
     $scope.activities = [];
+    $scope.date = new Date();
 
     $scope.addFood = function(){
       Food.create($scope.food).then(function(response){
