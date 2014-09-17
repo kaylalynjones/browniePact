@@ -6,6 +6,7 @@ function Food(o, user){
   this.name = o.name;
   this.calories = o.calories;
   this.meal = o.meal;
+  this.date = new Date(o.date);
   this.userId = user._id;
 }
 

@@ -1,0 +1,33 @@
+{
+  "_id" : {"$oid":"5418f384135d171d16434822"},
+  "email" : "bob@aol.com",
+  "password" : "$2a$10$XR.IQktUUujLBxed70GQn.jWY1wZ9ThM0Tar9wTqzkI4Uk1uP2Or2",
+  "username": "Big Bob",
+  "gender":"male",
+  "age" : 45,
+  "weight": 250,
+  "ft": 5,
+  "in":5,
+}
+{
+  "_id" : {"$oid":"5418f499135d171d16434826"},
+  "email" : "sally@aol.com",
+  "password" : "$2a$10$Xn6hXKN1ykkOJALm3.7qeehnLe/5ejVFbb27gNU9jvPGuLkix0YTC",
+  "username": "Sally",
+  "gender":"female",
+  "age" : 25,
+  "weight": 150,
+  "ft": 5,
+  "in":10,
+}
+{
+  "_id" : {"$oid":"5418f55a135d171d1643482a"},
+  "email" : "jill@aol.com",
+  "password" : "$2a$10$4C/TtkSKhKGYyAMj00TIDeGKmocWlMCGqieTUfN4loptBU5QUcm0q",
+  "username": "Jill",
+  "gender":"female",
+  "age" : 35,
+  "weight": 140,
+  "ft": 5,
+  "in": 5,
+}
