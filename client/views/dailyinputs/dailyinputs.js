@@ -23,7 +23,7 @@
     $scope.addExercise = function(){
       Exercise.create($scope.exercise).then(function(response){
         $scope.exercises.push(response.data.exercise);
-        $scope.food = {};
+        $scope.exercise = {};
       });
     };
 

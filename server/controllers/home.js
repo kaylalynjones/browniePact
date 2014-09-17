@@ -1,6 +1,6 @@
 'use strict';
 
 exports.index = function(req, res){
-  res.send({brownie:['Brownie', 'Little Black Dress', 'Speedo', 'Bikini', 'Six-Pack']});
+  res.send({brownie:['Brownie', 'Speedo', 'Bikini', 'Six-Pack', 'Cake', 'Lingerie']});
 };
 

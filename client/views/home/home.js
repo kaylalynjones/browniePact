@@ -4,10 +4,10 @@
   angular.module('browniePact')
   .controller('HomeCtrl', ['$scope', '$interval', 'Home', function($scope, $interval, Home){
     Home.getMessage().then(function(response){
-      $scope.brownie = response.data.brownie;
+      $scope.pleasures = response.data.brownie;
 
       $interval(function(){
-        $scope.brownie = _.shuffle($scope.brownie);
+        $scope.pleasure = _.shuffle($scope.pleasures)[0];
       }, 1000);
     });
   }]);
