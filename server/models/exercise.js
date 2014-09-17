@@ -5,7 +5,7 @@ var Mongo = require('mongodb');
 function Exercise(o, user, type){
   this.typeId = type._id;
   this.name = type.name;
-  this.calories = type.halfhrCalories;
+  this.calories = type.halfhrCalories * o.duration/30;
   this.userId = user._id;
   this.duration = o.duration;
   this.date = new Date(o.date);
