@@ -13,8 +13,11 @@
     function logout(){
       return $http.delete('/logout');
     }
+    function find(){
+      return $http.get('/users');
+    }
 
-    return {register:register, login:login, logout:logout};
+    return {register:register, login:login, logout:logout, find:find};
   }]);
 })();
 

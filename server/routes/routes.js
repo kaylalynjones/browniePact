@@ -29,6 +29,7 @@ module.exports = function(app, express){
   app.delete('/logout', users.logout);
 
   app.use(security.bounce);
+  app.get('/users', users.find);
   app.get('/food', foods.index);
   app.get('/exercise', exercises.index);
   app.post('/food', foods.create);

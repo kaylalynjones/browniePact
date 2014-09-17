@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('browniePact')
-  .controller('DashboardsCtrl', ['$scope', 'Food', 'Exercise', function($scope, Food, Exercise){
+  .controller('DashboardsCtrl', ['$scope', 'Food', 'Exercise', 'User', function($scope, Food, Exercise, User){
 
     $scope.foods = [];
     $scope.food = {};
@@ -32,12 +32,15 @@
 
     Exercise.all().then(function(response){
       $scope.exercises = response.data.exercises;
-      
     });
 
     $scope.totalCalories = function(){
-      Exercise.all().then
     };
+
+    User.find().then(function(response){
+      debugger;
+      $scope.user = response.data.user;
+    });
 
     $scope.config ={
       title: 'Calorie Intake',
