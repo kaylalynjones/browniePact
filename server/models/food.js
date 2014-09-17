@@ -4,7 +4,8 @@ var Mongo = require('mongodb');
 
 function Food(o, user){
   this.name = o.name;
-  this.link = o.link;
+  this.calories = o.calories;
+  this.meal = o.meal;
   this.userId = user._id;
 }
 
