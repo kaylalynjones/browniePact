@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('browniePact', ['ngRoute', 'LocalForageModule'])
+  angular.module('browniePact', ['ngRoute', 'LocalForageModule', 'angularCharts'])
   .config(['$routeProvider', '$httpProvider', '$localForageProvider', function($routeProvider, $httpProvider, $localForageProvider){
     $routeProvider
     .when('/', {templateUrl:'/views/home/home.html', controller:'HomeCtrl'})

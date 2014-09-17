@@ -1,6 +1,7 @@
 h2.text-center Daily Calculations
 .row
-  .col-xs-6
+  .col-xs-2
+  .col-xs-4
     form.form#food-form(name='foodForm', role='form', novalidate)
       h4.text-center What did you eat today?
       .form-group
@@ -15,21 +16,25 @@ h2.text-center Daily Calculations
       .form-group
         label(for='meal') Meal
         select.form-control(name='meal', ng-model='food.meal', required)
+          option.form-control(value='') Select Meal
           option.form-control(value='breakfast') Breakfast
           option.form-control(value='snack') Snack
           option.form-control(value='lunch') Lunch
           option.form-control(value='dinner') Dinner
       button.btn.btn-primary.pull-right(ng-show='foodForm.$valid', ng-click='addFood()') Add Meal
-  .col-xs-6
-    h3 {{date | date}}
-    h4 You Consumed:
+  .col-xs-4.info
+    h2 Today is {{date | date}}
+    h3 You Consumed:
     div(ng-repeat='food in foods')
-      h5 {{food.name}}
+      h4.name {{food.name}}
       h5 {{food.calories}}
       h5 {{food.meal}}
+      hr
+  .col-xs-2
 
 .row
-  .col-xs-6
+  .col-xs-2
+  .col-xs-4
     form.form#exercise-form(name='exerciseForm', role='form', novalidate)
       h4.text-center Did you exercise?
       .form-group
@@ -42,23 +47,22 @@ h2.text-center Daily Calculations
       .form-group
         label(for='duration') Duration
         select.form-control(name='duration', ng-model='exercise.duration' required)
+          option.form-control(value='') Select Duration
           option.form-control 30
           option.form-control 60
           option.form-control 90
           option.form-control 120
       button.btn.btn-primary.pull-right(ng-show='exerciseForm.$valid', ng-click='addExercise()') Add Exercise
-  .col-xs-6
+    .reward
+      h2 You Totally Deserve a: Raisin!
+  .col-xs-4.info
     h3 Your Activity:
     div(ng-repeat='exercise in exercises')
-      h5 {{ exercise.name }}
+      h5.name {{ exercise.name }}
       h5 {{ exercise.date | date}}
       h5 {{ exercise.duration }} Minutes Duration
       h5 {{ exercise.calories }} Calories
-
-.row
-  .col-xs-3
-  .col-xs-6
-    h2 You Totally Deserve a: Raisin!
-  .col-xs-4
+      hr
+  .col-xs-2
 
 

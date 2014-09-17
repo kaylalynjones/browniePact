@@ -1,1 +1,41 @@
-h2 DASHBOARD
+h2.text-center DASHBOARD
+//div(ac-chart='line', ac-data='$scope.data', ac-config='$scope.config', id='chart', class='chart')
+table.table.table-hover
+  thead
+    th
+    th Sunday
+    th Monday
+    th Tuesday
+    th Wednesday
+    th Thursday
+    th Friday
+    th Saturday
+  tbody
+    tr
+      td Food
+      td(ng-repeat='food in foods') {{food.name}}
+    tr
+      td Exercise
+      td(ng-repeat='exercise in exercises') {{exercise.name}}
+      td
+    tr
+      td Total Cal
+      td(ng-repeat='exercise in exercises') {{exercise.calories}}
+    tr
+      td Baseline
+      td {{user.calorieBase}}
+      td {{user.calorieBase}}
+      td {{user.calorieBase}}
+      td {{user.calorieBase}}
+      td {{user.calorieBase}}
+      td {{user.calorieBase}}
+      td {{user.calorieBase}}
+    tr
+      td Reward
+      td
+      td
+      td
+      td
+      td
+      td
+      td
