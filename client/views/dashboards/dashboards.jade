@@ -1,6 +1,6 @@
 h2.text-center DASHBOARD
 //div(ac-chart='line', ac-data='$scope.data', ac-config='$scope.config', id='chart', class='chart')
-table.table.table-hover
+table.table.table-bordered
   thead
     th
     th Sunday
@@ -13,7 +13,7 @@ table.table.table-hover
   tbody
     tr
       td Food
-      td(ng-repeat='food in foods') {{food.name}}
+      td(ng-repeat='food in foods | limitTo:quantity') {{food.name}}
     tr
       td Exercise
       td(ng-repeat='exercise in exercises') {{exercise.name}}

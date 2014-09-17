@@ -11,6 +11,7 @@
     $scope.activities = [];
     $scope.date = new Date();
     $scope.exerciseCalories = [];
+    $scope.quantity = 7;
 
     $scope.addFood = function(){
       Food.create($scope.food).then(function(response){
@@ -38,10 +39,9 @@
     };
 
     User.find().then(function(response){
-      debugger;
       $scope.user = response.data.user;
     });
-
+//-----------------------------------------------------
     $scope.config ={
       title: 'Calorie Intake',
       tooltips: false,
