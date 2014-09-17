@@ -32,7 +32,5 @@ User.login = function(o, cb){
   });
 };
 
-
-
 module.exports = User;
 
